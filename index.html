@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Management Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="hamburger-menu">&#9776;</div>
+            <div class="nav-links">
+                <div class="nav-close">&times;</div>
+                <a href="index.html">Home</a>
+                <a href="tasks.html">Tasks</a>
+                <a href="analytics.html">Analytics</a>
+                <a href="settings.html">Settings</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <h1>Welcome to Time Management Hub</h1>
+            <p>Maximize your productivity with effective time management tools created by Elderny.</p>
+            <button class="cta-button" onclick="location.href='tasks.html'">Get Started</button>
+        </div>
+        <section class="feature">
+            <h2>Manage Your Tasks</h2>
+            <p>Efficiently organize your tasks, set priorities, and track your progress. <a href="tasks.html">Start
+                    managing your tasks.</a></p>
+        </section>
+        <section class="feature">
+            <h2>Analyze Your Productivity</h2>
+            <p>Get insights into your productivity trends and improve your time management skills. <a
+                    href="analytics.html">View your analytics.</a></p>
+        </section>
+        <section class="feature">
+            <h2>Customize Your Experience</h2>
+            <p>Personalize settings, manage data, and tailor the application to your needs. <a
+                    href="settings.html">Adjust your settings.</a></p>
+        </section>
+        <section class="about-creator">
+            <h2>About the Creator</h2>
+            <p>This website was created by Elderny, dedicated to helping individuals optimize their time and boost
+                productivity.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Time Management Hub | Created by Elderny</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburgerMenu = document.querySelector('.hamburger-menu');
+            const navLinks = document.querySelector('.nav-links');
+            const navClose = document.querySelector('.nav-close');
+
+            hamburgerMenu.addEventListener('click', () => {
+                navLinks.classList.add('active');
+            });
+
+            navClose.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+
+    </script>
+</body>
+
+</html>

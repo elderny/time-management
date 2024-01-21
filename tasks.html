@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Task Management - Time Management Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="tasks.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="hamburger-menu">&#9776;</div>
+            <div class="nav-links">
+                <div class="nav-close">&times;</div>
+                <a href="index.html">Home</a>
+                <a href="tasks.html">Tasks</a>
+                <a href="analytics.html">Analytics</a>
+                <a href="settings.html">Settings</a>
+            </div>
+        </nav>
+    </header>
+    <section class="motivational-quote">
+        <h2>Motivational Quote</h2>
+        <blockquote id="motivational-quote">Loading quote...</blockquote>
+    </section>
+    <main class="task-management">
+        <section class="task-input">
+            <h2>Add New Task</h2>
+            <form id="task-form">
+                <input type="text" id="task-name" placeholder="Task Name" required>
+                <input type="datetime-local" id="task-deadline" required>
+                <select id="task-priority">
+                    <option value="High">High</option>
+                    <option value="Medium" selected>Medium</option>
+                    <option value="Low">Low</option>
+                </select>
+                <button type="submit">Add Task</button>
+            </form>
+        </section>
+        <section class="daily-tips">
+            <h2>Daily Productivity Tip</h2>
+            <p id="productivity-tip">Loading tip...</p>
+        </section>
+        <section class="task-list">
+            <h2>Your Tasks</h2>
+            <ul id="tasks">
+                <!-- Tasks will be added here dynamically -->
+            </ul>
+        </section>
+        <section class="daily-review">
+            <h2>Daily Review</h2>
+            <form id="daily-review-form">
+                <textarea id="daily-review-text" placeholder="How was your day? What did you learn?"></textarea>
+                <button type="submit">Submit Review</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Time Management Hub</p>
+    </footer>
+</body>
+</html>

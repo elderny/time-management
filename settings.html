@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - Time Management Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="hamburger-menu">&#9776;</div>
+            <div class="nav-links">
+                <div class="nav-close">&times;</div>
+                <a href="index.html">Home</a>
+                <a href="tasks.html">Tasks</a>
+                <a href="analytics.html">Analytics</a>
+                <a href="settings.html">Settings</a>
+            </div>
+        </nav>
+    </header>
+    <main class="settings">
+        <section class="clear-data">
+            <h2>Manage Your Data</h2>
+            <button id="clear-tasks">Clear All Tasks</button>
+            <button id="clear-reviews">Clear All Reviews</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Time Management Hub</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('clear-tasks').addEventListener('click', clearTasks);
+            document.getElementById('clear-reviews').addEventListener('click', clearReviews);
+        });
+
+        function clearTasks() {
+            if (confirm('Are you sure you want to clear all tasks? This action cannot be undone.')) {
+                localStorage.removeItem('tasks');
+                alert('All tasks have been cleared.');
+                // Optionally, refresh or navigate the user to another page
+            }
+        }
+
+        function clearReviews() {
+            if (confirm('Are you sure you want to clear all reviews? This action cannot be undone.')) {
+                localStorage.removeItem('reviews');
+                alert('All reviews have been cleared.');
+                // Optionally, refresh or navigate the user to another page
+            }
+        }
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburgerMenu = document.querySelector('.hamburger-menu');
+            const navLinks = document.querySelector('.nav-links');
+            const navClose = document.querySelector('.nav-close');
+
+            hamburgerMenu.addEventListener('click', () => {
+                navLinks.classList.add('active');
+            });
+
+            navClose.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics - Time Management Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="analytics.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="hamburger-menu">&#9776;</div>
+            <div class="nav-links">
+                <div class="nav-close">&times;</div>
+                <a href="index.html">Home</a>
+                <a href="tasks.html">Tasks</a>
+                <a href="analytics.html">Analytics</a>
+                <a href="settings.html">Settings</a>
+            </div>
+        </nav>
+    </header>
+    <main class="analytics-reports">
+        <section class="productivity-tips">
+            <h2>Daily Productivity Tip</h2>
+            <p id="productivity-tip">Loading tip...</p>
+        </section>
+        <section class="task-analytics">
+            <h2>Task Analytics</h2>
+            <p>Total Tasks: <span id="total-tasks">0</span></p>
+            <p>High Priority Tasks: <span id="high-priority-tasks">0</span></p>
+            <p>Medium Priority Tasks: <span id="medium-priority-tasks">0</span></p>
+            <p>Low Priority Tasks: <span id="low-priority-tasks">0</span></p>
+        </section>
+        <section class="recommendations">
+            <h2>Recommendations</h2>
+            <p id="frog-task">Your most important task: None</p>
+            <p id="important-tasks">Top 20% important tasks count: 0</p>
+        </section>
+        <section class="daily-reviews-overview">
+            <h2>Daily Reviews Overview</h2>
+            <!-- JavaScript can dynamically insert recent reviews here -->
+            <div id="recent-reviews"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Time Management Hub</p>
+    </footer>
+</body>
+
+</html>
