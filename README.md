@@ -33,3 +33,5 @@ If you want to run Time Management Hub locally, follow these steps:
 1. Clone the repository:
    ```sh
    git clone https://github.com/elderny/time-management.git
+
+Special thanks to Elderny for creating Time Management Hub.
