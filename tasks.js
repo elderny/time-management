@@ -9,9 +9,9 @@ function addTask(e) {
     e.preventDefault();
 
     // Get input values
-    let taskName = document.getElementById('task-name').value;
-    let taskDeadline = document.getElementById('task-deadline').value;
-    let taskPriority = document.getElementById('task-priority').value;
+    let taskName = document.getElementById('taskName').value;
+    let taskDeadline = document.getElementById('deadline').value;
+    let taskPriority = document.getElementById('priority').value;
 
     // Create a new task object
     let task = {
@@ -383,9 +383,9 @@ function editTask(index) {
     let task = tasks[index];
 
     // Populate the form with the task details
-    document.getElementById('task-name').value = task.name;
-    document.getElementById('task-deadline').value = task.deadline;
-    document.getElementById('task-priority').value = task.priority;
+    document.getElementById('taskName').value = task.name;
+    document.getElementById('deadline').value = task.deadline;
+    document.getElementById('priority').value = task.priority;
 
     // Remove the task from the list (it will be re-added when 'Add Task' is clicked)
     deleteTask(index);
