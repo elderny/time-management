@@ -30,13 +30,19 @@
         <section class="task-input">
             <h2>Add New Task</h2>
             <form id="task-form">
-                <input type="text" id="task-name" placeholder="Task Name" required>
-                <input type="datetime-local" id="task-deadline" required>
-                <select id="task-priority">
-                    <option value="High">High</option>
-                    <option value="Medium" selected>Medium</option>
-                    <option value="Low">Low</option>
+                <label for="taskName">Task Name:</label>
+                <input type="text" id="taskName" placeholder="Enter task name">
+                
+                <label for="deadline">Deadline:</label>
+                <input type="date" id="deadline">
+                
+                <label for="priority">Priority:</label>
+                <select id="priority">
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
                 </select>
+                
                 <button type="submit">Add Task</button>
             </form>
         </section>
