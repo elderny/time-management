@@ -12,7 +12,7 @@ Time Management Hub is a web-based application designed to help users optimize t
 
 ## Getting Started
 
-1. Visit the [Time Management Hub Website](https://your-website-url.com).
+1. Visit the [Time Management Hub Website](https://elderny.github.io/time-management/).
 
 2. Sign up for an account or log in if you already have one.
 
